@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-ES">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/progress-bar.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/validation.css">
+        <title>Shopping Wizard</title>
+    </head>
+
+    <body>
+        <header>
+            <div id="header-wrapper">
+                <div class="main-logo">
+                    <a href="index.html"><img src="/web/img/logo_200x200.png" alt="brand logo"></a>
+                </div>
+
+                <!-- PROGRESS BAR -->
+                <div id="progress-bar-container">
+                    <div id="progress-bar-titles">
+                        <ul>
+                            <li>Profile</li>
+                            <li>Address</li>
+                            <li>Shipping</li>
+                            <li>Finish</li>
+                        </ul>
+                    </div>
+                    <div id="progress-bar-checkpoints">
+                        <div><div class="circle-border circle-one"></div></div>
+                        <div><div class="circle-border circle-two"></div></div>
+                        <div><div class="circle-border circle-three"></div></div>
+                        <div><div class="circle-border circle-four"></div></div>
+                    </div>
+                    <div id="progress-bar"><div id="progress"></div></div>
+                </div>
+            </div>
+        </header>
+
+
+        <section class="general">
+
+        <!-- SECTION 1: MAIN PRODUCT -->
+
+            <section class="slide" id="one">
+                <main>
+                    <div class="center touch-auto">
+                        <img id="imageMain" src="./img/iphone-15-finish-select-202309-6-1inch-blue.jpg" alt="Cream" border="0">
+                    </div>
+                </main>
+                <aside>
+                    <fieldset class="fieldset-product">
+                        <legend><h2>Sale 30%</h2></legend>
+
+                        <h2 class="tittle">Iphone 15 128GB</h2>
+                        <h2><span id="price"><s>1499.99</span> € </s></h2>
+                        <h2><span id="price"></span>1049.99</span> €</h2>
+                        <div id="colors">Black</div>
+                        <ul id="hoodie" class="clothes-color">
+                            <img class="miniaturas" onclick="change(0)" id="imageBlanca" src="./img/iphone-15-finish-select-202309-6-1inch-blue.jpg" width="50%" alt="Cream" style="cursor: pointer;" data-price="19.99" data-option="https://i.ibb.co/StD3PQx/hmgoepprod-Blanca2.jpg">
+                            <img class="miniaturas" onclick="change(1)" id="imageAzul" src="./img/iphone-15-finish-select-202309-6-1inch-pink.jpg"  width="20%" alt="Blue" border="0" style="cursor: pointer;" data-price="22.95" data-option="https://i.ibb.co/6chkyhm/hmgoepprod-Azul2.jpg">
+                            <img class="miniaturas" onclick="change(2)" id="imageBeige" src="./img/iphone-15-finish-select-202309-6-1inch-green.jpg" width="50%" alt="Beige" border="0" style="cursor: pointer;" data-price="24.99" data-option="https://i.ibb.co/yyK8x3x/hmgoepprod-Beige2.jpg">
+                            <img class="miniaturas" onclick="change(3)" id="imageMarron" src="./img/iphone-15-finish-select-202309-6-1inch-yellow.jpg"  width="20%" alt="Brown" border="0" style="cursor: pointer;" data-price="26.95" data-option="https://i.ibb.co/NCzPQH9/hmgoepprod-Marron2.jpg">
+                            <img class="miniaturas" onclick="change(4)" id="imageRojo" src="./img/iphone-15-finish-select-202309-6-1inch-black.jpg"  width="20%" alt="Red" border="0" style="cursor: pointer;" data-price="28.95" data-option="https://i.ibb.co/svGjYmH/hmgoepprod-Rojo2.jpg">
+                        </ul>
+                        <h4 class="atributo">Model:</h4>
+                        <form action="">
+                            <select name="sizes" id="sizes"> <!--onchange()-->
+                                <option value="size" >&nbsp;&nbsp;Select Model</option>
+                                <option value="XS" >&nbsp;&nbsp;Iphone 15</option>
+                                <option value="S" >&nbsp;&nbsp;Iphone 15 plus</option>
+
+                            </select>
+                        </form>
+                        <p class="membership">Sign up to our membership and get <b>15% off</b> your first purchase!</p>
+
+                        <div class="buttons">
+                        </a><button id="productBttn" class="next" onclick="createBuyer()"><a href="#two">BUY</a></button>
+                        </div>
+                        <div id="displayListBuyers"></div>
+                    </fieldset>
+                    <!-- <fieldset>
+                        <a href="#one">1</a> - <a href="#two">2</a> - <a href="#three">3</a> - <a href="#four">4</a> - <a href="#five">5</a>
+                    </fieldset> -->
+                </aside>
+            </section>
+            </section>
+        </section>
+        <script src="js/app.js"></script>
+        <script src="js/validation.js"></script>
+        <script src="js/product.js"></script>
+        <script src="js/info.js"></script>
+        <script src="js/progress.js"></script>
+    </body>
+</html>
